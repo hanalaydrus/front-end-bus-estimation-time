@@ -34,7 +34,11 @@ const Home = () => {
                 >
                     <Text>Driver</Text>
                 </Button>
-                <Button block style={styles.btn}>
+                <Button 
+                    block style={styles.btn}
+                    style={styles.btn}
+                    onPress={() => Actions.User()}
+                >
                     <Text>User</Text>
                 </Button>
             </Content>
