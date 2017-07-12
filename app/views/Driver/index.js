@@ -5,7 +5,6 @@
  */
 
 import React, { Component } from 'react';
-import { Actions } from 'react-native-router-flux';
 import {
   AppRegistry,
   View,
@@ -20,23 +19,12 @@ import {
   Text,
 } from 'native-base';
 import styles from './styles';
-import img from './../../images/bus.png'
 
 const Home = () => {
     return (
         <Container style={ styles.container }>
             <Content>
-                <Image style={ styles.img } source={ img } />
-                <Button 
-                    block
-                    style={styles.btn}
-                    onPress={() => Actions.Driver()}
-                >
-                    <Text>Driver</Text>
-                </Button>
-                <Button block style={styles.btn}>
-                    <Text>User</Text>
-                </Button>
+                <Text>Driver</Text>
             </Content>
         </Container>
     );
